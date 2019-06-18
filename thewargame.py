@@ -151,10 +151,10 @@ while user.still_has_cards() and comp.still_has_cards():
 
         # Check to see who had higher rank
         if RANKS.index(c_card[1]) < RANKS.index(p_card[1]):
-            print(user.name+" has the higher card, adding to hand.")
+            print(user.name+" has higher card, adding to hand.")
             user.hand.add(table_cards)
         else:
-            print(comp.name+" has the higher card, adding to hand.")
+            print(comp.name+" has higher card, adding to hand.")
             comp.hand.add(table_cards)
 
     else:
@@ -167,4 +167,4 @@ while user.still_has_cards() and comp.still_has_cards():
             comp.hand.add(table_cards)
 
 print("Great Game, it lasted: "+str(total_rounds))
-print("A war occured "+str(war_count)+" times.")
+print("A war occured "+str(war_count)+" time.")
